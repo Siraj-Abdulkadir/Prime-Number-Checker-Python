@@ -5,4 +5,8 @@ if(myInput < 1):
  print("The number have to be greater than 1!")
 else:
  squaredRoot = round(myInput**0.5)
+ def lessThanPrime(squaredRoot):
+  lessThanNumbers= primeNumbers[0:squaredRoot]
+  return print(lessThanNumbers)
+  
  print(squaredRoot)
