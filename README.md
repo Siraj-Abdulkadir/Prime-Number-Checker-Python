@@ -1,3 +1,1 @@
-# python-primeChecker
-
-# checks if a number recieved is a prime or conjucate using primality test
+# checks whether the number recieved is a prime or composite number using primality test(trial division)
