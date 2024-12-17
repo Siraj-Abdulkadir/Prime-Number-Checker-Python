@@ -4,9 +4,33 @@ primeNumbers = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83
 if(myInput < 1):
  print("The number have to be greater than 1!")
 else:
+ 
  squaredRoot = round(myInput**0.5)
+ 
  def lessThanPrime(squaredRoot):
-  lessThanNumbers= primeNumbers[0:squaredRoot]
-  return print(lessThanNumbers)
-  
- print(squaredRoot)
+  fullLength = len(primeNumbers) + 1
+  stopPoint = fullLength -1
+  for counter in range(0, fullLength):
+   everyChecker = primeNumbers[counter]
+   
+   if( everyChecker <= squaredRoot):
+    
+    if(myInput % everyChecker == 0):
+     print("The number recieved is composite number!")
+     break
+    
+    elif(counter == stopPoint):
+     print("The number recieves is a prime number!")
+     break 
+    else:
+     continue
+   
+   elif(counter == stopPoint):
+     print("The number recieves is a prime number!")
+     break  
+   
+   else:
+      continue
+
+ lessThanPrime(squaredRoot)
+ 
