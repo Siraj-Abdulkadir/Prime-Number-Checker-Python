@@ -5,32 +5,28 @@ if(myInput < 1):
  print("The number have to be greater than 1!")
 else:
  
- squaredRoot = round(myInput**0.5)
+  squaredRoot = round(myInput**0.5)
+  fullLength = len(primeNumbers)
  
- def lessThanPrime(squaredRoot):
-  fullLength = len(primeNumbers) + 1
-  stopPoint = fullLength -1
   for counter in range(0, fullLength):
    everyChecker = primeNumbers[counter]
    
    if( everyChecker <= squaredRoot):
     
-    if(myInput % everyChecker == 0):
-     print("The number recieved is composite number!")
-     break
+     if(myInput % everyChecker == 0):
+      print("The number recieved is composite number!")
+      break
     
-    elif(counter == stopPoint):
-     print("The number recieves is a prime number!")
-     break 
-    else:
-     continue
+     elif(counter == squaredRoot):
+      print("The number recieves is a prime number!")
+      break 
+     else:
+      continue
    
-   elif(counter == stopPoint):
+   elif(counter == squaredRoot):
      print("The number recieves is a prime number!")
      break  
    
    else:
       continue
-
- lessThanPrime(squaredRoot)
  
