@@ -1,6 +1,6 @@
 # checks whether the number recieved is a prime or composite number using primality test(trial division)
 
-the steps  <br>
+<em> the steps </em>  <br>
 1-recieves an input from the user <br>
 2-converts the input an integer data type  <br>
 3-square root the number recieved  <br>
